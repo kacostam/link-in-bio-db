@@ -1,0 +1,8 @@
+<!-- app/views/pages_template/home.html.erb -->
+<h1>Howdy!</h1>
+
+<% Item.all.each do |the_item| %>
+  <div>
+    <%= the_item.id %>
+  </div>
+<% end %>
