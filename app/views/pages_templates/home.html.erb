@@ -1,10 +1,22 @@
 <!-- app/views/pages_template/home.html.erb -->
-<h1>Howdy!</h1>
+  <div class="main-container">
+    <div class="image-row">
+      <img src="/profile-pic.jpg" alt="Karla's profile picture" class="avatar-image"/>
+    </div>
 
-<% @list_of_items.each do |the_item| %>
-  <div>
-    <a href= "<%= the_item.link_url %>" %>
-      <%= the_item.link_description %>
-    </a>
+    <div class="name-row">
+      Karla Acosta
+    </div>
+
+  
+
+    <% @list_of_items.each do |the_item| %>
+      <div class="links-row">
+        <div class="item">
+          <a href= "<%= the_item.link_url %>" %>
+            <%= the_item.link_description %>
+          </a>
+        </div>
+      </div>
+    <% end %>
   </div>
-<% end %>
